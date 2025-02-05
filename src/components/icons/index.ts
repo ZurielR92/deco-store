@@ -1,0 +1,17 @@
+export { default as ArrowBackIcon } from './ArrowBackIcon';
+export { default as BackArrowIcon } from './BackArrowIcon';
+export { default as CanaimaIcon } from './CanaimaIcon';
+export { default as CancelIcon } from './CancelIcon';
+export { default as CartIcon } from './CartIcon';
+export { default as EmailIcon } from './EmailIcon';
+export { default as FacebookIcon } from './FacebookIcon';
+export { default as FavoriteIcon } from './FavoriteIcon';
+export { default as FiltersIcon } from './FiltersIcon';
+export { default as InstagramIcon } from './InstagramIcon';
+export { default as PinterestIcon } from './PinterestIcon';
+export { default as SearchIcon } from './SearchIcon';
+export { default as SharedIcon } from './SharedIcon';
+export { default as SupportIcon } from './SupportIcon';
+export { default as TikTokIcon } from './TikTokIcon';
+export { default as TrashIcon } from './TrashIcon';
+export { default as WhatsappIcon } from './WhatsappIcon';

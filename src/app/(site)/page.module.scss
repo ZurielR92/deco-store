@@ -1,0 +1,105 @@
+.main {
+  background: rgb(247, 247, 247);
+  margin-bottom: 52px;
+  .header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(0,0,0,.9);
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+    .imgBackground {
+      z-index: -66;
+      border-bottom-left-radius: 1rem;
+      object-fit: cover;
+      object-position: center;
+    }
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.3rem;
+      margin-top: 1.5rem;
+      strong {
+        font-size: 1.4rem;
+        font-weight: 900;
+      }
+    }
+    p {
+      font-size: .9rem;
+    }
+    >button {
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+      background: white;
+      border-radius: .6rem;
+      padding: .7rem 2.2rem;
+      border: none;
+      position: relative;
+      text-align: left;
+      color: rgb(109, 109, 109);
+      font-size: 1rem;;
+      svg {
+        position: absolute;
+        left: .6rem;
+        top:.6rem;
+        fill: rgb(109, 109, 109);
+      }
+    }
+  }
+
+}
+
+.about {
+  margin: 1rem;
+  padding: 1rem;
+  background: black;
+  color: white;
+  border-radius: .5rem;
+  p {
+    font-size: .8rem;
+  }
+}
+
+.footer {
+  background: black;
+  color: white;
+  padding: 1rem;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1rem;
+  }
+}
+
+
+.sec {
+  padding: 1rem;
+  background: white;
+  h2 {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+  ul {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    list-style: none;
+    &::-webkit-scrollbar {
+      display: none; /* Oculta la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+    }
+    li {
+      min-width: 260px;
+      p {
+        font-size: .8rem;
+      }
+    }
+  }
+}

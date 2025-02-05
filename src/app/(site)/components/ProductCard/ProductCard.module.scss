@@ -1,0 +1,180 @@
+.card {
+    //border: 1px solid red;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    h3 {
+        font-size: 1rem;
+    }
+    img {
+        transition: all .2s ease-in-out;
+    }
+
+    .control {
+        display: flex;
+        width: 100%;
+        padding: .5rem;
+        justify-content: space-between;
+        align-items: center;
+        > div {
+            display: flex;
+            gap: .5rem;
+        }
+        button {
+            height: 40px;
+            border-radius: 10rem;
+            gap: .3rem;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: none;
+            cursor: pointer;
+            &.active {
+                fill: red;
+            }
+        }
+    }
+    .containerImage {
+        order: -1;
+        overflow: hidden;
+        position: relative;
+        max-width: 336px;
+        border-radius: 1rem;
+        overflow: hidden;
+        .slide{
+            max-width: 100%;
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .title {
+        width: 100%;
+        display: flex;
+        padding: 0px .5rem;
+        flex-direction: column;
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            a {
+                display: flex;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+            order: -1;
+            .logo {
+                display: flex;
+            }
+        }
+        .containerImage {
+            flex-grow: 1;
+            border-radius: 1rem;
+            overflow: hidden;
+            max-width: 90vw;
+            img {
+                height: 85vw;
+                border-radius: 1rem;
+            }
+        }
+        .title {
+            width: 90vw;
+            padding: 0;
+        }
+        .bntWs {
+            width: 100vw;
+            background: gainsboro;
+            gap: .5rem;
+            border: none;
+            fill: rgb(65, 65, 65);
+            color: rgb(65, 65, 65);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            padding: .5rem;
+        }
+        .tags {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+.instagramHeart {
+    width: 184px;
+    height: 162px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    left: 0;
+    margin: auto;
+    background: url("/images/heart.png") no-repeat center/contain;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .animation .instagramHeart {
+    animation-duration: 1000ms;
+    animation-name: like-heart-animation;
+    animation-timing-function: ease-in-out;
+  }
+
+
+  @keyframes like-heart-animation {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    15% {
+      opacity: 0.9;
+      transform: scale(1.2);
+    }
+    30% {
+      transform: scale(0.95);
+    }
+    45%,
+    80% {
+      opacity: 0.9;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes identifier {
+    0% {
+        transform: scale(0);
+      }
+      15% {
+        transform: scale(1.2);
+      }
+      30% {
+        transform: scale(0.95);
+      }
+      45%,
+      80% {
+        transform: scale(1);
+      }
+  }

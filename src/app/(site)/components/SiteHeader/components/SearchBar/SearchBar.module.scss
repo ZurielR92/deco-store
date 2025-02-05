@@ -1,0 +1,70 @@
+.searchBar {
+    form {
+        position: relative;
+        input {
+            min-width: 500px;
+            font-size: 1rem;
+            padding: .8rem 1.5rem;
+            transition: all .2s ease-in-out;
+            border-radius: 10rem;
+            border: 1px solid gray;
+        }
+        /* Ocultar la "x" en Firefox */
+        input[type="search"]::-ms-clear {
+            display: none;
+        }
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-clear-button {
+            -webkit-appearance: none;
+            appearance: none;
+            display: none;
+        }
+        button {
+            position: absolute;
+            border-radius: 10rem;
+            height: 38px;
+            width: 38px;
+            top: 5px;
+            right: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            &:hover {
+                background: black;
+                fill: white;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .searchBar {
+        flex-grow: 1;
+        form {
+            input {
+                min-width: 100%;
+                width: 100%;
+                padding: .4rem 1.5rem;
+            }
+            /* Ocultar la "x" en Firefox */
+            input[type="search"]::-ms-clear {
+            }
+            input[type="search"]::-webkit-search-cancel-button,
+            input[type="search"]::-webkit-search-clear-button {
+            }
+            button {
+                top:2px;
+                right: 2px;
+                height: 28px;
+                width: 28px;
+                svg {
+                    transform: scale(.8);
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+    
+}

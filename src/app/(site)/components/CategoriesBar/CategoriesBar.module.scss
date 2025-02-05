@@ -1,0 +1,32 @@
+.categories {
+    display: flex;
+    gap: .5rem;
+    padding: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none; /* Oculta la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+    }
+    button, .button {
+      width: 82px;
+      min-width: 82px;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: .5rem;
+      padding: .5rem 0;
+      background: white;
+      border: none;
+      gap: .3rem;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background: rgb(240, 240, 240);
+      }
+      span {
+        font-size: .7rem;
+      }
+    }
+  }

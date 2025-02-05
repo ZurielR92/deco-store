@@ -1,0 +1,39 @@
+.imageSlider {
+    width: 100vw;
+    max-width: 100vw;
+    height: 95vw;
+    position: relative;
+    .slide{
+        max-width: 100%;
+        height: 100%;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+    >button {
+        position: absolute;
+        top: .5rem;
+        z-index: 5;
+        background: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 10rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .back {
+        left: .5rem;
+    }
+    .favorite {
+        right: 1rem;
+        &.active {
+            fill: red;
+        }
+    }
+    .share {
+        right: 4rem;
+    }
+}

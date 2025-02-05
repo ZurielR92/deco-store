@@ -1,0 +1,25 @@
+.categorySection {
+padding: 1rem;
+h2 {
+    font-size: 1.3rem;
+}
+.grid {
+    margin-top: .8rem;
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+        display: none; /* Oculta la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+    }
+
+    .card {
+        img {
+            border-radius: .5rem;
+        }
+        h3 {
+            font-size: .8rem;
+        }
+    }
+}
+}

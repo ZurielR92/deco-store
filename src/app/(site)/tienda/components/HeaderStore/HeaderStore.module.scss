@@ -1,0 +1,37 @@
+.headerStore {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1rem;
+    padding-bottom: .6rem;
+    background: white;
+    z-index: 9;
+    .bar { 
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+        >:nth-child(2) {
+            flex-grow: 1;
+        }
+        .backButton {
+            background: none;
+            border: none;
+        }
+        >button {
+            background: white;
+            border-radius: .6rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .5rem 1rem;
+            border: 1px solid gray;
+            display: flex;
+            color: rgb(109, 109, 109);
+            font-size: 1rem;;
+            span {
+                text-transform: capitalize;
+            }
+        }
+    }
+}

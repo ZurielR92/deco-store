@@ -1,0 +1,41 @@
+.menu {
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 52px;
+    z-index: 99;
+    display: flex;
+    border-top: 1px solid rgb(224, 224, 224);
+    .active {
+        color: rgb(192, 0, 0);
+        fill: rgb(192, 0, 0);
+    }
+    a, .a{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        flex-grow: 1;
+        span {
+            font-size: .7rem;
+            margin-bottom: .4rem;
+            margin-top: .2rem;
+        }
+    }
+    >:nth-child(3) {
+        span {
+            margin-top: -.1rem;
+        }
+    }
+}
+
+
+
+@media screen and (min-width:600px) {
+    .menu {
+        display: none;
+    }
+}

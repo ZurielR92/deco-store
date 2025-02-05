@@ -1,0 +1,39 @@
+.main{
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 100px;
+    .imgContainer {
+        margin-top: 130px;
+        position: relative;
+        height: 370px;
+        img {
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    .content {
+        padding: 1rem;
+        h1 {
+            margin:0;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+        .details {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            ul {
+                list-style: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main {
+        .imgContainer {
+            margin-top: 0;
+        }
+    }
+}

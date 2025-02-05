@@ -1,0 +1,20 @@
+.main {
+    padding-top: 7rem;
+    .container {
+        max-width: 1280px;
+        margin: auto;
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main {
+        padding-top: 1rem;
+        .container {
+            margin-bottom: 3rem;
+            padding: .5rem;
+        }
+    }
+}
