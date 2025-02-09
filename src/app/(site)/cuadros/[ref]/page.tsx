@@ -10,7 +10,7 @@ interface Props {
 
 
 const getProduct = async ( ref:string ) => {
-    const res = await fetch(`http://0.0.0.0:3000/api/v1/product/${ref}`,{next:{revalidate:172800}})
+    const res = await fetch(`https://deco-store.vercel.app/api/v1/product/${ref}`,{next:{revalidate:172800}})
     const product = await res.json();
     return product;
 }
@@ -21,7 +21,7 @@ export async function generateMetadata(
 ) : Promise<Metadata>{
 
     const { ref } = params;
-    const res = await fetch(`http://0.0.0.0:3000/api/v1/product/${ref.slice(0,6)}`);
+    const res = await fetch(`https://deco-store.vercel.app/api/v1/product/${ref.slice(0,6)}`);
 
     const product:ProductInterface = await res.json();
 

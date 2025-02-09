@@ -7,7 +7,7 @@ import { CategorySection } from "./components/CategorySection";
 
 
 const getCategories = async () => {
-  const url = process.env.NODE_ENV === 'development' ? `http://0.0.0.0:3000/api/v1/categories/home` : `https://canaima.store/api/v1/categories/home`;
+  const url = process.env.NODE_ENV === 'development' ? `http://0.0.0.0:3000/api/v1/categories/home` : `https://deco-store.vercel.app/api/v1/categories/home`;
   try {
     const res = await fetch(url,{method:'GET', headers:{'content-type':'application/json'}, cache:'no-cache'});
     const categories:any = await res.json()

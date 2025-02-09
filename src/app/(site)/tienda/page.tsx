@@ -14,7 +14,7 @@ interface Props {
 
 const getProduts = async (page:number=1, search:string='', categoria:string='') => {
   const path = `?${search ? `search=${search}&`:''}${categoria ? `category=${categoria}&`:''}&page=${page}`
-  const url = process.env.NODE_ENV === 'development' ? `http://0.0.0.0:3000/api/v1/products${path}` : `https://canaima.store/api/v1/products${path}`
+  const url = process.env.NODE_ENV === 'development' ? `http://0.0.0.0:3000/api/v1/products${path}` : `https://deco-store.vercel.app/api/v1/products${path}`
   const res = await fetch(url,{method:'GET', headers:{'content-type':'application/json'}, cache:'no-cache'});
   const products = await res.json();
   return products as any;
