@@ -28,7 +28,8 @@ export const connect = async() => {
         await mongoose.disconnect();
     }
 
-    await mongoose.connect( process.env.MONGO_URL || 'mongodb+srv://zabdiva:KZHvSFadp3Cr4@ciudadcreativa.s0yik.mongodb.net/deco-store?retryWrites=true&w=majority&appName=deco-store');
+    //await mongoose.connect( process.env.MONGO_URL || 'mongodb+srv://zabdiva:KZHvSFadp3Cr4@ciudadcreativa.s0yik.mongodb.net/deco-store?retryWrites=true&w=majority&appName=deco-store');
+    await mongoose.connect( 'mongodb+srv://zabdiva:KZHvSFadp3Cr4@ciudadcreativa.s0yik.mongodb.net/deco-store?retryWrites=true&w=majority&appName=deco-store');
     mongoConnection.isConnected = 1;
     console.log('Conectado a MongoDB:', process.env.MONGO_URL );
 }
