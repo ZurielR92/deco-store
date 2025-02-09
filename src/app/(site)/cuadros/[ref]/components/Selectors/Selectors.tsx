@@ -2,10 +2,8 @@
 
 import { FC, useEffect, useRef, useState } from 'react';
 import styles from './Selectors.module.scss';
-import Link from 'next/link';
-import { RemoveFavorite, addToFavorites, isInFavorites } from '@/utils/localStorage';
-import { FavoriteIcon, WhatsappIcon } from '@/components/icons';
-import { useRouter } from 'next/navigation';
+import {  isInFavorites } from '@/utils/localStorage';
+import { WhatsappIcon } from '@/components/icons';
 
 
 const getPrice = (size:string) => {
@@ -36,7 +34,7 @@ const Selectors:FC<Props> = ({ reff }) => {
         setIsFavorite(isInFavorites(reff))
     },[reff])
     const linkWhatsapp = () => {
-        const link = `https://wa.me/573017497431?text=Hola,%20quisiera%20comprar%20el%20cuadro:%0ARef:%20${reff}%0ATamaño:%20${option}%0ALink:%20https://canaima.store/cuadros/${reff}`;
+        const link = `https://wa.me/573137082992?text=Hola,%20quisiera%20comprar%20el%20cuadro:%0ARef:%20${reff}%0ATamaño:%20${option}%0ALink:%20https://deco-store.vercel.app/cuadros/${reff}`;
         window.open(link, '_blank')
     }
 

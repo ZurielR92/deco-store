@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph:{
     title: "Cuadros Decorativos en Medellín | Canaima.Store",
     description:"Explora Canaima.Store y encuentra una amplia colección de cuadros, descubre arte único y personalizado para tu hogar, oficina, o local en la ciudad de Medellín",
-    images: 'https://canaima.store/images/og.jpg'
+    images: 'https://deco-store.vercel.app/images/og.jpg'
   }
 };
 
